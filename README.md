@@ -28,9 +28,20 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+- [ ] Explain the differences between `client-side routing` and `server-side routing`. 
+
+With client-side routing, the client app running the website manages the data within its own memory. An entire website is loaded on the first request but then additional requests can be made to the server for additional data, so there is slower load time from the start, but it can be faster once the initial load is done. With server-side routing, all the data is managed on a server and not on the client. Every time data is needed, a request is made to the server and the entire page will refresh. It can take a while if the internet is slow or data files are large, but it only returns requested data. Search engines used to be optimized for server-side routing and not client-side routing, but that's changed recently.
+
+- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers. 
+
+C (Create) => Post 
+R (Read) => Get 
+U (Update) => Put 
+D (Delete) => Delete
+
+- [ ] Mention three tools we can use to make AJAX requests. 
+
+Three tools we can use to make AJAX requests are axios, fetch, and Jquery. 
 
 
 ## Project Set Up
