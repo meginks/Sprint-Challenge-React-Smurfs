@@ -6,4 +6,40 @@
   display: flex;
   align-items: space-around;
   justify-content: space-around;
+  font-size: 2rem;
+} 
+
+.nav-link {
+  padding: 1rem;
+  margin: 1rem;
 }
+
+.chosen-smurf {
+  background-color: #88ccff;
+} 
+
+.Smurfs h1 {
+  font-size: 3rem;
+  color: #88ccff;
+} 
+
+.Smurfs {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+} 
+
+.Smurf {
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid #88ccff; 
+  font-size: 2rem;
+}
+.Smurf h3 {
+  padding-bottom: .5rem;
+  border-bottom: solid #88ccff 2px;
+}
+.Smurf button {
+  background-color: #88ccff;
+  padding: .5rem;
+} 
