@@ -27,10 +27,10 @@ class App extends Component {
       this.setState({
         smurfs: res.data 
       })
+    })
       .catch(err => {
         console.log(err);
       })
-    });
   }
  
   // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
@@ -44,7 +44,7 @@ class App extends Component {
         <NavLink to="/smurfform" activeClassName="chosen-smurf">Invite a Smurf to the Village!</NavLink>
       </div>
         <Route path="/smurfform" render={props => ( <SmurfForm {...props} addSmurf={this.addSmurf} /> ) } /> 
-    <Route exact path="/" render={props => ( <Smurfs {...props} smurfs={this.state.smurfs} /> ) } />
+    <Route exact path="/" render={props => ( <Smurfs {...props} smurfs={this.state.smurfs} deleteSmurf={this.deleteSmurf} /> ) } />
       </div>
     );
   }
