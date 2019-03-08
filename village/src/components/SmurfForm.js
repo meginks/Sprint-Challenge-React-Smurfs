@@ -20,13 +20,6 @@ class SmurfForm extends Component {
       .catch(err => console.log(err))
     }
   
-  //   this.setState({
-  //     name: '',
-  //     age: '',
-  //     height: ''
-  //   });
-  // }
-
   handleInputChange = e => {
     e.preventDefault();
     this.setState({ [e.target.name]: e.target.value });
